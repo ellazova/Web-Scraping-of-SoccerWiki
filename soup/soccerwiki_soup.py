@@ -78,7 +78,7 @@ def get_stats():
             
             # Update our list of player stats
             player_stats.append((NAME, CLUB, POSITION, HEIGHT, FOOT, AGE , RATING))
-    print("--- Successfully Done with Scraping ---")
+    print(" Finished Scraping ")
 
 # Writing our scraped stats to a file
 def write_stats_to_file():
@@ -92,7 +92,7 @@ def write_stats_to_file():
     stats_dataframe = pd.DataFrame(top_100_players, columns=HEADERS)
     stats_dataframe.to_csv(output_file)
     
-    print(f"Successfully created {output_file} file ")
+    print(f"Finished Creating {output_file} file ")
         
 # # Running our scraper
 build_urls()
