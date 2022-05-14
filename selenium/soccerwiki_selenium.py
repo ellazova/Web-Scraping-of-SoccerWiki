@@ -2,7 +2,7 @@ import pandas as pd
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 
-# do our own configuration 
+# Make our own configuration 
 from selenium.webdriver.chrome.options import Options
 
 # initialise options 
