@@ -55,7 +55,8 @@ class Soccer(scrapy.Spider):
         # Get the response from the get_request(start_urls)
         all_stats = response.css("tbody > tr")
         
-        # Basically looping through table rows under the body & finding where our data resides
+        # Now we will be looping through the table rows under the body 
+        # Finding where our data is located
 
         for stat in all_stats:
             NAME = ".//td[@class='text-left']/a/text()"
